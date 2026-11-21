@@ -1,0 +1,19 @@
+<!doctype html>
+<!-- Minimal static dashboard: structure and accessible content. -->
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A simple synthetic-data dashboard for testing GitHub, Vercel and Netlify delivery.">
+<title>Integration Dashboard</title><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+</head>
+<body><main>
+<header><p class="eyebrow">GITHUB / VERCEL / NETLIFY</p><h1>Integration Dashboard</h1><p>A small page. Two hosts. One source.</p></header>
+<section class="notice" aria-label="Data disclosure">Demo only: metrics below are synthetic, not live service telemetry. The clock and host label update in your browser.</section>
+<section class="cards" aria-label="Synthetic metrics">
+<article><h2>Demo requests</h2><strong>1,284</strong><p>Synthetic daily total</p></article>
+<article><h2>Demo success rate</h2><strong>99.9%</strong><p>Synthetic sample value</p></article>
+<article><h2>Demo response time</h2><strong>142 ms</strong><p>Synthetic median</p></article>
+</section>
+<section class="panel"><h2>Delivery checks</h2><dl><div><dt>Current host</dt><dd id="host">JavaScript not yet run</dd></div><div><dt>Browser time (UTC)</dt><dd id="clock">JavaScript not yet run</dd></div><div><dt>Release</dt><dd>integration-demo-v1</dd></div></dl><button id="refresh" type="button">Refresh browser time</button><p id="message" role="status">Static HTML loaded. Waiting for browser script.</p><noscript><p>JavaScript is disabled. Static demo metrics remain available.</p></noscript></section>
+<footer><a href="https://github.com/deepak-akkil/integration-dashboard-demo">View source on GitHub</a><span>No login, tracking, or external dependencies.</span></footer>
+</main></body></html>

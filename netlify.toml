@@ -1,0 +1,3 @@
+# Publish the dependency-free static dashboard directly from the repository root.
+[build]
+  publish = "."
